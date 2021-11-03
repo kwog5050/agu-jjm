@@ -1,0 +1,119 @@
+.loction{
+  background-color: #fff7f0;
+  padding-bottom: 200px;
+  ul{
+    li{
+      width: 100%;
+      > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 0px 20px;
+        h2{
+          font-family: $subFont;
+          font-size: 24px;
+        }
+        > span{
+          display: flex;
+          flex-direction: row;
+          gap: 40px;
+          > div{
+            font-size: 16px;
+            > span{
+              font-family: $mainFont-ExtraBold;
+              font-size: 16px;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .imgbox{
+        position: relative;
+        height: 300px;
+        overflow: hidden;
+        margin: 0;
+        img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px){
+  .loction{
+    ul{
+      li{
+        > div{
+          flex-direction: column;
+          justify-content: stretch;
+          align-items: flex-start;
+          h2{
+            margin-bottom: 20px;
+          }
+          > span{
+            gap: 10px;
+            flex-direction: column;
+          }
+        }
+        .imgbox{
+          position: relative;
+          height: 200px;
+          overflow: hidden;
+          margin: 0;
+          img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 499px){
+  .loction{
+    ul{
+      li{
+        .imgbox{
+          height: 200px;
+          img{
+            left: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px){
+  .loction{
+    ul{
+      li{
+        > div{
+          margin: 50px 0px 20px;
+          h2{
+            margin-bottom: 20px;
+          }
+          > span{
+            > div{
+              font-size: 14px;
+              letter-spacing: -1px;
+              > span{
+                font-size: 14px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

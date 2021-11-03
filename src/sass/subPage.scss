@@ -1,0 +1,56 @@
+@import './variables';
+@import './subPage.brand.scss';
+@import './subPage.menu.scss';
+@import './subPage.loction';
+@import './subPage.starups';
+@import './subPage.company.scss';
+
+.moimg{
+  display: none;
+}
+
+.subBanner{
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+
+  span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: $subFont;
+    font-size: 35px;
+    color: #fff;
+    text-shadow: 2px 2px 3px #000000;
+    z-index: 1;
+  }
+
+  img{
+    width: 100%;
+    min-width: 1400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+}
+
+@media (max-width:600px){
+
+  .pcimg{
+    display: none;
+  }
+
+  .moimg{
+    display: block;
+  }
+
+  .subBanner{
+    img{
+      min-width: 600px;
+    }
+  }
+}
