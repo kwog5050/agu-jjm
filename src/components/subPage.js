@@ -1,34 +1,51 @@
-import React from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { Link, Route, Switch } from "react-router";
 
-import Brand from "./brand.js";
-import Menu from "./menu.js";
-import Loction from "./loction.js";
-import Startups from "./startups.js";
-import Company from "./company.js"
-
 import "../sass/subPage.scss";
+let Brand = lazy(() => { return import('./brand.js') });
+let Menu = lazy(() => { return import('./menu.js') });
+let Loction = lazy(() => { return import('./loction.js') });
+let Startups = lazy(() => { return import('./startups.js') });
+let Company = lazy(() => { return import('./company.js') });
+
+
+
 
 function SubPage(props) {
+
+  let [suspenseStyle, setSuspenseStyle] = useState({
+    textAlign: "center",
+    padding: "200px 0px",
+    backgroundColor: "#fff7f0"
+  })
+
   return (
     <div>
       {props.SubBanner()}
       
       <Switch>
         <Route path="/Brand">
-          <Brand></Brand>
+          <Suspense fallback={<div style={ suspenseStyle }><img src="/img/loding.gif" alt="" /></div>}>
+            <Brand></Brand>
+          </Suspense>
         </Route>
 
         <Route path="/Menu">
-          <Menu></Menu>
+          <Suspense fallback={<div style={ suspenseStyle }><img src="/img/loding.gif" alt="" /></div>}>
+            <Menu></Menu>
+          </Suspense>
         </Route>
 
         <Route path="/Loction">
-          <Loction></Loction>
+          <Suspense fallback={<div style={ suspenseStyle }><img src="/img/loding.gif" alt="" /></div>}>
+            <Loction></Loction>
+          </Suspense>
         </Route>
 
         <Route path="/Startups">
-          <Startups Avg={props.Avg} Review={props.Review} Gallery={props.Gallery}></Startups>
+          <Suspense fallback={<div style={ suspenseStyle }><img src="/img/loding.gif" alt="" /></div>}>
+            <Startups Avg={props.Avg} Review={props.Review} Gallery={props.Gallery}></Startups>
+          </Suspense>
         </Route>
 
         <Route path="/Company">
