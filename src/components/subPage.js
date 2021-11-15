@@ -49,7 +49,9 @@ function SubPage(props) {
         </Route>
 
         <Route path="/Company">
-          <Company></Company>
+          <Suspense fallback={<div style={ suspenseStyle }><img src="/img/loding.gif" alt="" /></div>}>
+            <Company></Company>
+          </Suspense>
         </Route>
       </Switch>
     </div>
