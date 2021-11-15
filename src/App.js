@@ -18,6 +18,10 @@ function App() {
       setMobileMenu(false);
     }
   }
+  let { params } = useParams();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, params)
 
   return (
     <div className="App">
