@@ -4,7 +4,7 @@
   ul{
     li{
       width: 100%;
-      > div{
+      > div:first-child{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -27,19 +27,6 @@
           }
         }
       }
-      .imgbox{
-        position: relative;
-        height: 300px;
-        overflow: hidden;
-        margin: 0;
-        img{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-          height: 100%;
-        }
-      }
     }
   }
 }
@@ -48,7 +35,7 @@
   .loction{
     ul{
       li{
-        > div{
+        > div:first-child{
           flex-direction: column;
           justify-content: stretch;
           align-items: flex-start;

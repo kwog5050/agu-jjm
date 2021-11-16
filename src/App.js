@@ -18,18 +18,14 @@ function App() {
       setMobileMenu(false);
     }
   }
-  let { params } = useParams();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, params)
 
   return (
     <div className="App">
       <header>
         <div className="flexBox">
-          <Link to="/">
+          <a href="/">
             <h1><img src="/img/hd_logo.svg" alt="" /></h1>
-          </Link>
+          </a>
           <nav className="menu pc">
             <MenuList></MenuList>
           </nav>
@@ -273,19 +269,24 @@ function App() {
 
       switch (params) {
         case 'Brand':
-          title = '브랜드소개'
+          title = '브랜드소개';
+          window.scrollTo(0, 0);
           break;
         case 'Menu':
-          title = '메뉴소개'
+          title = '메뉴소개';
+          window.scrollTo(0, 0);
           break;
         case 'Loction':
-          title = '매장소개'
+          title = '매장소개';
+          window.scrollTo(0, 0);
           break;
         case 'Startups':
-          title = '창업안내'
+          title = '창업안내';
+          window.scrollTo(0, 0);
           break;
         case 'Company':
-          title = '회사소개'
+          title = '회사소개';
+          window.scrollTo(0, 0);
         default:
           break;
       }
