@@ -14,7 +14,7 @@ function Brand() {
         <img src="/img/subpage/Brand/logo.png" alt="" />
         <div className="bar"></div>
         <p>
-          한 사람이 끼치는 위대한 영향을 잃기에 <br />
+          한 사람이 끼치는 위대한 영향을 알기에 <br />
           정성을 다한 식사를 통해 <br />
           사회의 긍정적인 변화가 이루어 지기를 희망한다.
         </p>
