@@ -93,6 +93,7 @@
 .review{
   background-color: #fff7f0;
   padding-bottom: 150px;
+  position: relative;
   .bar{
     margin: 0px auto;
     width: 1px;
@@ -118,6 +119,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
+    position: relative;
+    z-index: 1;
     li{
       background-color: #fff;
       padding: 30px;
@@ -159,6 +162,12 @@
       }
     }
   }
+  .reviewBg{
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+  }
 }
 
 .gallery{
@@ -167,6 +176,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   img{
     width: 100%;
+  }
+}
+
+@media (max-width:1200px){
+  .reviewBg{
+    display: none;
   }
 }
 

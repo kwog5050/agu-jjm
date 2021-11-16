@@ -218,6 +218,7 @@ function App() {
 
     return (
       <div className="review">
+        <img src="/img/main/reviewBg.png" alt="" className="reviewBg" />
 				<div className="wrap">
 					<div className="bar"></div>
 					<h2>
@@ -240,7 +241,7 @@ function App() {
 							})
 						}
 					</ul>
-				</div>
+        </div>
 			</div>
     )
   }
