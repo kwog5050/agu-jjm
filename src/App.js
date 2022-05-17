@@ -77,8 +77,8 @@ function App() {
       <footer>
         <h1><img src="/img/ft_logo.svg" alt="" /></h1>
         <p>
-          명가생아구찜 ㅣ 대표자.이상현 <span>ㅣ</span> <br className="br"/> 사업자등록번호.506-09-28945 <br />
-          주소.경북 포항시 북구 새천년대로 1020번길 3 111호<br className="br" />(두호동,메가시티상가)
+          (주)풍운 명가생아구찜 ㅣ 대표자.이상현 <span>ㅣ</span> <br className="br"/> 사업자등록번호.568-87-02387 <br />
+          주소.경상북도 포항시 남구 대이로41번길 14<br className="br" /> 1층(대잠동)
         </p>
         <div className="copyright">
           COPYRIGHT(C) 2021 명가생아구찜 <br className="br" />ALL RIGHT RESERVED.

@@ -9,7 +9,7 @@ function Company() {
         <div className="wrap">
           <div className="bar"></div>
 
-          <h2>풍운F&B 회사소개</h2>
+          <h2>(주)풍운 회사소개</h2>
 
           <ul>
             <li><img src="/img/subpage/company/img.png" alt="" /></li>
@@ -36,7 +36,7 @@ function Company() {
           </div>
 
           <div className="mission">
-            <h3><span>VISION</span>미션</h3>
+            <h3><span>VISION</span>비전</h3>
             <p>아구찜. 해물찜 프랜차이즈 1등 업체로의 도약</p>
           </div>
         </div>

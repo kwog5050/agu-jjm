@@ -7,7 +7,7 @@ function Main(props) {
 
 	let [slideText, setSlideText] = useState([
 		'자랑하고 싶은 맛 \n<span>명가생아구찜</span>이 <br>전하고 싶은 마음입니다',
-		'자랑하고 싶은 맛 \n<span>명가생아구찜</span>이 <br>전하고 싶은 마음입니다2',
+		'자랑하고 싶은 맛 \n<span>명가생아구찜</span>이 <br>전하고 싶은 마음입니다',
 	]);
 	let [review, setReview] = useState([
 		{
