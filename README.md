@@ -1,1 +1,1 @@
-	myeong-ga.co.kr
+	http://myeong-ga.co.kr
